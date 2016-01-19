@@ -16,31 +16,46 @@ namespace Teht_6
             public string Color { get; set; }
             public double Engine { get; set; }
             public int Speed { get; set; }
-            
+               public bool Tyres { get; set; }
 
 
+
+
+        // parametric constructor
+
+
+        // method display car data
+        public void PrintData()
+        {
+            Console.WriteLine("Motorcycle data");
+            Console.WriteLine(" - model: " + Model);
+            Console.WriteLine(" - color: " + Color);
+            Console.WriteLine(" - engine: " + Engine);
+            Console.WriteLine(" - speed: " + Speed);
+
+        }
+
+        public Motorc()
+        {
+           Tyres = true;
+        }
+        public Motorc(string model)
+        {
+            Model = model;
+        }
+
+
+        //method gives more speed
+        public void Accelerate(int newSpeed)
+        {
+            Speed += newSpeed;
+        }
+
+    }
+
+         
+            }
         
 
-            // parametric constructor
-          
-
-            // method display car data
-            public void PrintData()
-            {
-                Console.WriteLine("Motorcycle data");
-                Console.WriteLine(" - model: " + Model);
-                Console.WriteLine(" - color: " + Color);
-                Console.WriteLine(" - engine: " + Engine);
-                Console.WriteLine(" - speed: " + Speed);
-             
-            }
-
-            //method gives more speed
-            public void Accelerate(int newSpeed)
-            {
-                Speed += newSpeed;
-            }
-        }
-    }
 
 
