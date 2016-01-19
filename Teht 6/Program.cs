@@ -10,6 +10,17 @@ namespace Teht_6
     {
         static void Main(string[] args)
         {
+
+        
+            // create one Car instance
+            Motorc motorc = new Motorc();
+            motorc.Model = "Kawasaki";
+            motorc.Color = "Black";
+            motorc.Engine = 16;
+            motorc.Speed = 270;
+            motorc.PrintData();
+
+           
         }
     }
 }
